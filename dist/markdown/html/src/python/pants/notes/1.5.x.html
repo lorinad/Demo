@@ -4,6 +4,28 @@
 <title>1.5.x Stable Releases</title>
 <p style="font: 200% bold">1.5.x Stable Releases</p>
 <p>This document describes releases leading up to the <tt class="docutils literal">1.5.x</tt> <tt class="docutils literal">stable</tt> series.</p>
+<div class="section" id="rc1-03-31-2018">
+<h1>1.5.1rc1 (03/31/2018)</h1>
+<div class="section" id="bugfixes">
+<h2>Bugfixes</h2>
+<ul class="simple">
+<li>Fail for deleted-but-depended-on targets in changed (#5636)
+<a class="reference external" href="https://github.com/pantsbuild/pants/pull/5636">PR #5636</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="rc0-03-20-2018">
+<h1>1.5.1rc0 (03/20/2018)</h1>
+<div class="section" id="refactoring-improvements-and-tooling">
+<h2>Refactoring, Improvements, and Tooling</h2>
+<ul class="simple">
+<li>[coursier/m2-coords] update coursier json parsing; use maven's coords (#5475)
+<a class="reference external" href="https://github.com/pantsbuild/pants/pull/5475">PR #5475</a></li>
+<li>Batch execution of address Specs and remove SelectTransitive (#5605)
+<a class="reference external" href="https://github.com/pantsbuild/pants/pull/5605">PR #5605</a></li>
+</ul>
+</div>
+</div>
 <div class="section" id="id1">
 <h1>1.5.0 (03/19/2018)</h1>
 <p>The <tt class="docutils literal">1.5.0</tt> stable release, with no additional changes since the <tt class="docutils literal">rc1</tt> release.</p>
@@ -18,7 +40,7 @@
 </div>
 <div class="section" id="rc1-03-14-2018">
 <h1>1.5.0rc1 (03/14/2018)</h1>
-<div class="section" id="bugfixes">
+<div class="section" id="id2">
 <h2>Bugfixes</h2>
 <ul class="simple">
 <li>Render a warning rather than failing <cite>list</cite> when no targets are matched (#5598)
@@ -27,7 +49,7 @@
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5589">PR #5589</a></li>
 </ul>
 </div>
-<div class="section" id="refactoring-improvements-and-tooling">
+<div class="section" id="id3">
 <h2>Refactoring, Improvements, and Tooling</h2>
 <ul class="simple">
 <li>Further --changed optimization (#5579)
@@ -41,7 +63,7 @@
 </div>
 <div class="section" id="rc0-03-07-2018">
 <h1>1.5.0rc0 (03/07/2018)</h1>
-<div class="section" id="id2">
+<div class="section" id="id4">
 <h2>Refactoring, Improvements, and Tooling</h2>
 <ul class="simple">
 <li>Cleanup v1 changed code. (#5572)
@@ -106,7 +128,7 @@
 </div>
 <div class="section" id="dev5-03-02-2018">
 <h1>1.5.0.dev5 (03/02/2018)</h1>
-<div class="section" id="id3">
+<div class="section" id="id5">
 <h2>New Features</h2>
 <ul class="simple">
 <li>Add ability for pants to call coursier with the new url attribute (#5527)
@@ -116,14 +138,14 @@
 <a class="reference external" href="https://github.com/pantsbuild/pex/pull/444">PR #444</a></li>
 </ul>
 </div>
-<div class="section" id="id4">
+<div class="section" id="id6">
 <h2>Bugfixes</h2>
 <ul class="simple">
 <li>[pantsd] Repair end to end runtracker timing for pantsd runs. (#5526)
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5526">PR #5526</a></li>
 </ul>
 </div>
-<div class="section" id="id5">
+<div class="section" id="id7">
 <h2>Refactoring, Improvements, and Tooling</h2>
 <ul class="simple">
 <li>Generate a single python source chroot. (#5535)
@@ -159,7 +181,7 @@
 </div>
 <div class="section" id="dev4-02-23-2018">
 <h1>1.5.0.dev4 (02/23/2018)</h1>
-<div class="section" id="id6">
+<div class="section" id="id8">
 <h2>New Features</h2>
 <ul class="simple">
 <li>Fix up remote process execution (#5500)
@@ -179,7 +201,7 @@
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5459">PR #5459</a></li>
 </ul>
 </div>
-<div class="section" id="id7">
+<div class="section" id="id9">
 <h2>Bugfixes</h2>
 <ul class="simple">
 <li>[pantsd] Set the remote environment for pantsd-runner and child processes. (#5508)
@@ -200,14 +222,14 @@
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5501">PR #5501</a></li>
 </ul>
 </div>
-<div class="section" id="id8">
+<div class="section" id="id10">
 <h2>Documentation Updates</h2>
 <ul class="simple">
 <li>Fix reference html/js: expand/collapse toggle in Firefox (#5507)
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5507">PR #5507</a></li>
 </ul>
 </div>
-<div class="section" id="id9">
+<div class="section" id="id11">
 <h2>Refactoring, Improvements, and Tooling</h2>
 <ul class="simple">
 <li>Delete unused old python pipeline classes. (#5509)
@@ -245,14 +267,14 @@
 </div>
 <div class="section" id="dev3-02-10-2018">
 <h1>1.5.0.dev3 (02/10/2018)</h1>
-<div class="section" id="id10">
+<div class="section" id="id12">
 <h2>New Features</h2>
 <ul class="simple">
 <li>Python distribution task for user-defined setup.py + integration with ./pants {run/binary/test} (#5141)
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5141">PR #5141</a></li>
 </ul>
 </div>
-<div class="section" id="id11">
+<div class="section" id="id13">
 <h2>Refactoring, Improvements, and Tooling</h2>
 <ul class="simple">
 <li>Bundle all kythe entries, regardless of origin. (#5450)
@@ -262,7 +284,7 @@
 </div>
 <div class="section" id="dev2-02-05-2018">
 <h1>1.5.0.dev2 (02/05/2018)</h1>
-<div class="section" id="id12">
+<div class="section" id="id14">
 <h2>New Features</h2>
 <ul class="simple">
 <li>Allow intransitive unpacking of jars. (#5398)
@@ -288,7 +310,7 @@
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5394">PR #5394</a></li>
 </ul>
 </div>
-<div class="section" id="id13">
+<div class="section" id="id15">
 <h2>Bugfixes</h2>
 <ul class="simple">
 <li>Fix <cite>PytestRun</cite> to handle multiple source roots. (#5400)
@@ -299,14 +321,14 @@
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5352">PR #5352</a></li>
 </ul>
 </div>
-<div class="section" id="id14">
+<div class="section" id="id16">
 <h2>Documentation Updates</h2>
 <ul class="simple">
 <li>Document release reset of master. (#5397)
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5397">PR #5397</a></li>
 </ul>
 </div>
-<div class="section" id="id15">
+<div class="section" id="id17">
 <h2>Refactoring, Improvements, and Tooling</h2>
 <ul class="simple">
 <li>Make the Kythe Java indexer emit JVM nodes. (#5435)
@@ -340,21 +362,21 @@
 </div>
 <div class="section" id="dev1-01-26-2018">
 <h1>1.5.0.dev1 (01/26/2018)</h1>
-<div class="section" id="id16">
+<div class="section" id="id18">
 <h2>New Features</h2>
 <ul class="simple">
 <li>[pantsd] Add RunTracker stats. (#5374)
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5374">PR #5374</a></li>
 </ul>
 </div>
-<div class="section" id="id17">
+<div class="section" id="id19">
 <h2>API Changes</h2>
 <ul class="simple">
 <li>[pantsd] Bump to watchman 4.9.0-pants1. (#5386)
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5386">PR #5386</a></li>
 </ul>
 </div>
-<div class="section" id="id18">
+<div class="section" id="id20">
 <h2>Bugfixes</h2>
 <ul class="simple">
 <li>Single resolve with coursier (#5362)
@@ -370,7 +392,7 @@
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5366">PR #5366</a></li>
 </ul>
 </div>
-<div class="section" id="id19">
+<div class="section" id="id21">
 <h2>Documentation Updates</h2>
 <ul class="simple">
 <li>Update the rust readme. (#5393)
@@ -379,7 +401,7 @@
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5370">PR #5370</a></li>
 </ul>
 </div>
-<div class="section" id="id20">
+<div class="section" id="id22">
 <h2>Refactoring, Improvements, and Tooling</h2>
 <ul class="simple">
 <li>Apply goal-level skip/transitive options to lint/fmt tasks. (#5383)
@@ -405,7 +427,7 @@
 </div>
 <div class="section" id="dev0-01-22-2018">
 <h1>1.5.0.dev0 (01/22/2018)</h1>
-<div class="section" id="id21">
+<div class="section" id="id23">
 <h2>New Features</h2>
 <ul class="simple">
 <li>add avro/java contrib plugin to the release process (#5346)
@@ -416,7 +438,7 @@
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5322">PR #5322</a></li>
 </ul>
 </div>
-<div class="section" id="id22">
+<div class="section" id="id24">
 <h2>API Changes</h2>
 <ul class="simple">
 <li>Remove 1.5.0.dev0 deprecations (#5363)
@@ -443,7 +465,7 @@
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5312">PR #5312</a></li>
 </ul>
 </div>
-<div class="section" id="id23">
+<div class="section" id="id25">
 <h2>Bugfixes</h2>
 <ul class="simple">
 <li>Fix a silly bug when computing indexable targets. (#5359)
@@ -452,7 +474,7 @@
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5358">PR #5358</a></li>
 </ul>
 </div>
-<div class="section" id="id24">
+<div class="section" id="id26">
 <h2>Refactoring, Improvements, and Tooling</h2>
 <ul class="simple">
 <li>A lightweight mechanism for registering options at the goal level. (#5325)
@@ -495,7 +517,7 @@
 <a class="reference external" href="https://github.com/pantsbuild/pants/pull/5330">PR #5330</a></li>
 </ul>
 </div>
-<div class="section" id="id25">
+<div class="section" id="id27">
 <h2>Documentation Updates</h2>
 <ul class="simple">
 <li>add mypy to list of released plugins in docs (#5341)
